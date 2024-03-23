@@ -64,11 +64,11 @@
     <div class="functions">
       <button onclick="calculate('+')">+</button>
       <button onclick="calculate('-')">-</button>
-      <button onclick="calculate('*')">×</button> 
-      <button onclick="calculate('/')">÷</button>
+      <button onclick="calculate('*')">x</button> 
+      <button onclick="calculate('/')">/</button>
       <button onclick="backspace()">&#9003;</button>
       <button onclick="calculate('v')">sqrt</button>
-      <button onclick="calculate('²')">Sq</button>
+      <button onclick="calculate('Â²')">Sq</button>
       <button onclick="calculate(' ')"> </button>
       <button onclick="calculate('=')">=</button>
     </div>
@@ -86,7 +86,7 @@
         }
       } else if (value === 'v') {
         result.value = Math.sqrt(result.value);
-      } else if (value === '²') {
+      } else if (value === 'Â²') {
         result.value = Math.pow(result.value, 2);
       } else if (value === 'C') {
         clearResult();
